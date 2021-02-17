@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>swiper图文滚动</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/swiper.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="150" src="js/canvas-nest.min.js"></script>
+    <div class="main">
+        <div class="title">swiper图文滚动示例1</div>
+        <div class="w-imgText w-imgText1" id="imgText1">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img1.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x1">
+                                    <div class="tt_h">图文滚动一一一</div>
+                                    <p >文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img2.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x1">
+                                    <div class="tt_h">图文滚动二二二</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+            </ul>
+            <div class="igt_btn">
+                <div class="igt_next"></div>
+                <div class="igt_prev"></div>
+            </div>
+            <div class="igt_page"></div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('#imgText1', {
+              effect : 'slide',
+              loop: true,
+              autoplay : {
+                delay:5000,//滚动速度
+                disableOnInteraction: false,
+              },
+              navigation: {
+                 nextEl: '.igt_next',
+                 prevEl: '.igt_prev',
+              },
+              pagination: {
+                el: '.igt_page',
+                clickable: true,
+              }
+            });
+        });
+        </script>    
+        <div class="title">swiper图文滚动示例2</div>
+        <div class="w-imgText w-imgText2" id="imgText2">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img1.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x2">
+                                    <div class="tt_h">图文滚动一一一</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img2.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x2">
+                                    <div class="tt_h">图文滚动二二二</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+            </ul>
+            <div class="igt_btn">
+                <div class="igt_next"></div>
+                <div class="igt_prev"></div>
+            </div>
+            <div class="igt_page"></div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('#imgText2', {
+            effect : 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            loop: true,
+            autoplay : {
+                delay:5000,//滚动速度
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.igt_next',
+                prevEl: '.igt_prev',
+            },
+            pagination: {
+                el: '.igt_page',
+                clickable: true,
+            }
+            });
+        });
+        </script>     
+        <div class="title">swiper图文滚动示例3</div>
+        <div class="w-imgText w-imgText3" id="imgText3">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img-count img">
+                                <div class="imgSize"></div>
+                                <div class="img-count-in"><img src="images/img1.jpg"/></div>
+                            </div>
+                            <div class="textB">  
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x3">
+                                    <div class="tt_h">图文滚动一一一</div>
+                                    <p >文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                    <a href="#" class="btn_x">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img-count img">
+                                <div class="imgSize"></div>
+                                <div class="img-count-in"><img src="images/img2.jpg"/></div>
+                            </div>
+                            <div class="textB">  
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x3">
+                                    <div class="tt_h">图文滚动二二二</div>
+                                    <p >文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                    <a href="#" class="btn_x">了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+            </ul>
+            <div class="igt_btn">
+                <div class="igt_next"></div>
+                <div class="igt_prev"></div>
+            </div>
+            <div class="igt_page"></div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                var swiper = new Swiper('#imgText3', {
+                effect : 'slide',
+                loop: true,
+                autoplay : {
+                    delay:5000,//滚动速度
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.igt_next',
+                    prevEl: '.igt_prev',
+                },
+                pagination: {
+                    el: '.igt_page',
+                    clickable: true,
+                }
+                });
+                var imgCount = function () {
+                    $('.img-count').each(function (index, element) {
+                        var imgH = $(this).height();
+                        var imgW = $(this).width();
+                        var $thisimg = $(this).find('img');
+                        var img = new Image();
+                        img.onload = function () {
+                            if ($thisimg.data("img") === false) {
+                                return '';
+                            }
+                            var imgWidth = img.width;
+                            var imgHeight = img.height;
+                            if ((imgWidth / imgHeight) < (imgW / imgH)) {
+                                $thisimg.css({'height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'max-height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'top': -((imgW / imgH) * ((imgHeight * 1.00) / imgWidth) - 1) / 2 * imgH})
+                            } else {
+                                $thisimg.css({'width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'max-width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'left': -((imgH / imgW) * ((imgWidth * 1.00) / imgHeight) - 1) / 2 * imgW})     
+                            }
+                        }
+                        img.src = $thisimg.attr("src");
+                    });
+                }
+                imgCount();
+                $(window).resize(function () {
+                    imgCount();
+                });
+            });
+        </script>     
+        <div class="title">swiper图文滚动示例4</div>
+        <div class="w-imgText w-imgText4" id="imgText4">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img1.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x4">
+                                    <div class="tt_h">图文滚动一一一</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img">
+                                <img src="images/img2.jpg"/>
+                            </div>
+                            <div class="textB">
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x4">
+                                    <div class="tt_h">图文滚动二二二</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+            </ul>
+            <div class="igt_btn">
+                <div class="igt_next"></div>
+                <div class="igt_prev"></div>
+            </div>
+            <div class="igt_page"></div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('#imgText4', {
+              effect : 'fade',
+              fadeEffect: {
+                 crossFade: true,
+              },
+              loop: true,
+              autoplay : {
+                delay:5000,//滚动速度
+                disableOnInteraction: false,
+              },
+              navigation: {
+                 nextEl: '.igt_next',
+                 prevEl: '.igt_prev',
+              },
+              pagination: {
+                el: '.igt_page',
+                clickable: true,
+              }
+            });
+        });
+        </script>     
+        <div class="title">swiper图文滚动示例5</div> 
+        <div class="w-imgText w-imgText5" id="imgText5">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img-count img">
+                                <div class="imgSize"></div>
+                                <div class="img-count-in"><img src="images/img1.jpg"/></div>
+                            </div>
+                            <div class="textB"> 
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x5">
+                                    <div class="tt_h" >图文滚动一一一</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="item">
+                        <div class="imTB">
+                            <div class="img-count img">
+                                <div class="imgSize"></div>
+                                <div class="img-count-in"><img src="images/img2.jpg"/></div>
+                            </div>
+                            <div class="textB"> 
+                                <div class="bg_x"></div>
+                                <div class="text_x text_x5">
+                                    <div class="tt_h" >图文滚动二二二</div>
+                                    <p>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#"></a></div>
+                </li>
+            </ul>
+            <div class="igt_btn">
+                <div class="igt_next border_gray1 aHoverborder_main aHoverbg_main"></div>
+                <div class="igt_prev border_gray1 aHoverborder_main aHoverbg_main"></div>
+            </div>
+            <div class="igt_page"></div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('#imgText5', {
+              effect : 'fade',
+              fadeEffect: {
+                 crossFade: true,
+              },
+              loop: true,
+            //   allowTouchMove: false,
+              autoplay : {
+                delay:5000,//滚动速度
+                disableOnInteraction: false,
+              },
+              navigation: {
+                 nextEl: '.igt_next',
+                 prevEl: '.igt_prev',
+              },
+              pagination: {
+                el: '.igt_page',
+                clickable: true,
+              }
+            });
+            var imgCount = function () {
+                $('.img-count').each(function (index, element) {
+                    var imgH = $(this).height();
+                    var imgW = $(this).width();
+                    var $thisimg = $(this).find('img');
+                    var img = new Image();
+                    img.onload = function () {
+                        if ($thisimg.data("img") === false) {
+                            return '';
+                        }
+                        var imgWidth = img.width;
+                        var imgHeight = img.height;
+                        if ((imgWidth / imgHeight) < (imgW / imgH)) {
+                            $thisimg.css({'height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'max-height': (imgW / imgH) * ((imgHeight * 1.00) / imgWidth) * imgH, 'top': -((imgW / imgH) * ((imgHeight * 1.00) / imgWidth) - 1) / 2 * imgH})
+                        } else {
+                            $thisimg.css({'width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'max-width': (imgH / imgW) * ((imgWidth * 1.00) / imgHeight) * imgW, 'left': -((imgH / imgW) * ((imgWidth * 1.00) / imgHeight) - 1) / 2 * imgW})     
+                        }
+                    }
+                    img.src = $thisimg.attr("src");
+                });
+            }
+            imgCount();
+            $(window).resize(function () {
+                imgCount();
+            });
+        });	
+        </script>     
+    </div>
+</body>
